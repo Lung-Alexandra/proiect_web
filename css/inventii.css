@@ -376,7 +376,7 @@ main, main:before, main:after {
 .card-container {
   margin: 25px auto 0;
   position: relative;
-  width: 80%;
+  width: 63%;
 }
 
 .card {
@@ -461,4 +461,12 @@ main, main:before, main:after {
   margin: -1px auto 0;
   width: 80%;
   z-index: -1;
+}
+
+@media (max-width: 400px){
+	.card-container {
+    margin: 25px auto 0;
+    position: relative;
+    width: 85%;
+  }
 }
