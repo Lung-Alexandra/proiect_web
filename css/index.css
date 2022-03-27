@@ -399,6 +399,23 @@ nav .content .links{
   }
 }
 
+
+@media(max-width: 400px){
+  .boxes{
+    max-width:100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+  .box{
+    width: 85%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    align-items: center;
+    text-align: center;
+  }
+}
 .logo-description{
   margin-top: 5%;
   text-align: center;
