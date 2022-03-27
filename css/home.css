@@ -954,3 +954,86 @@ a{
   margin-bottom: 5%;
   height: 50vh;
 }
+
+@media(max-width: 400px){
+  .container1{
+    display: grid;
+    grid-template-areas:
+        "inter1 elem1 elem1 elem1 elem1 elem1 elem1 elem1"
+        "inter2 elem2 elem3 elem4 elem5 elem6 elem7 elem8"
+        "inter3 elem17 elem17 elem9 elem9 elem10 elem10 elem10"
+        "inter4 elem11 elem11 elem12 elem13 elem14 elem15 elem16"
+        ;
+    grid-template-columns: repeat(8, 13%);
+    grid-template-rows: repeat(4, 25%);
+    text-align: center;
+    width: 90%;
+    margin-left:3%;
+    opacity:0.9;
+    margin-bottom: 5%;
+    height: 60vh;
+  }
+  #inter1{
+    font-size: 0.6em;
+  }
+  #inter2{
+    font-size: 0.6em;
+  }
+  #inter3{
+    font-size: 0.6em;
+  }
+  #inter4{
+    font-size: 0.6em;
+  }
+  #elem1{
+    font-size: 0.6em;
+  }
+  #elem2{
+    font-size: 0.6em;
+  }
+  #elem3{
+    font-size: 0.4em;
+  }
+  #elem4{
+    font-size: 0.5em;
+  }
+  #elem5{
+    font-size: 0.5em;
+  }
+  #elem6{
+    font-size: 0.6em;
+  }
+  #elem7{
+    font-size: 0.3em;
+  }
+  #elem8{
+    font-size: 0.6em;
+  }
+  #elem9{
+    font-size: 0.6em;
+  }
+  #elem10{
+    font-size: 0.6em;
+  }
+  #elem11{
+    font-size: 0.6em;
+  }
+  #elem12{
+    font-size: 0.55em;
+  }
+  #elem13{
+    font-size: 0.4em;
+  }
+  #elem14{
+    font-size: 0.5em;
+  }
+  #elem15{
+    font-size: 0.6em;
+  }
+  #elem16{
+    font-size: 0.4em;
+  }
+  #elem17{
+    font-size: 0.6em;
+  }
+}
