@@ -470,6 +470,9 @@ nav .content .links{
 }
 
 @media (max-width: 400px){
+  .container{
+    margin: 10px;
+  }
   .image{
 		max-width: 90%;
 	}
