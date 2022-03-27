@@ -21,6 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--backgroundColor);
+    overflow: hidden;
 }
 #returnbutton {
     position: fixed;
