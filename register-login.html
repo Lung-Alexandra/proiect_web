@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/register-login.css">
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https//cdn.jsdelivr.net/jquery.validation/1.16.0/jqery.validate.min.js"></script>
+        <script src="https//cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    </head>
+    <body>
+        <div id="returnbutton">
+            <a class="go-back" href="quiz.html">Back</a>
+        </div>   
+        <div class="login-page">
+            <div class="box">
+                <div class="left">
+                    <h3>Create Account</h3>
+                    <button class="register-btn btn">Register</button>
+                </div>
+                <div class="right">
+                    <h3>Have an Account?</h3>
+                    <button class="login-btn btn">Login</button>
+                </div>
+                <div class="form-div">
+                    <div class="login-form">
+                        <form action="404error.html" method="post" id="login-form">
+                            <h3>Login</h3>
+                            <div class="form-group">
+                                <input type="text" name="emailAddress" placeholder="Email Address" autocomplete="off" class="form-control text">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" placeholder="Password" autocomplete="off" class="form-control text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    <input type="checkbox" checked name="" id=""> Remember Me
+                                </label>
+                            </div>
+                            <button class="submit-btn">Login</button>
+                        </form>
+                    </div>
+                    <div class="register-form form-hidden">
+                        <form action="404error.html" method="post" id="register-form">
+                            <h3>Registration</h3>
+                            <div class="form-group">
+                                <input type="text" name="fullname" placeholder="Full Name*" autocomplete="off" class="form-control text">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="emailAddress" placeholder="Email Address" autocomplete="off" class="form-control text">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" placeholder="Password" autocomplete="off" class="form-control text">
+                            </div>
+                            <div class="form-group">
+                                <p>Alege sexul:</p>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label1 for="html">M</label1><br>
+                                <input type="radio" id="css" name="fav_language" value="CSS">
+                                <label1 for="css">F</label1>
+                            </div>
+                            <button class="submit-btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>     
+
+        <script>
+           
+            $(document).ready(function(){ 
+                var rootProp = document.documentElement.style;
+                $(".register-btn").click(function(){
+                    $(".register-form").removeClass('form-hidden');
+                    $(".login-form").addClass('form-hidden');
+                    $(".box").addClass('slide-form');
+                    $.darkMode();
+                });
+                $(".login-btn").click(function(){
+                    $(".register-form").addClass('form-hidden');
+                    $(".login-form").removeClass('form-hidden');
+                    $(".box").removeClass('slide-form');
+                    $.lightMode();
+                });
+                $.lightMode = function(){
+                    rootProp.setProperty("--backgroundColor","rgb(201, 197, 197)");
+                    rootProp.setProperty("--formBackgroundColor","rgb(224, 219, 219)"); 
+                    rootProp.setProperty("--shadow1","rgba(119,119,119,0.85)");
+                    rootProp.setProperty("--shadow2","rgba(255,255,255,0.85)");
+                    rootProp.setProperty("--shadow3","rgba(255,255,255)");
+                    rootProp.setProperty("--h3Color","#00354d");
+                    rootProp.setProperty("--labelColor","balck");
+                }
+                $.darkMode = function(){
+                    rootProp.setProperty("--backgroundColor","rgb(9 25 23)");
+                    rootProp.setProperty("--formBackgroundColor","rgba(9 25 23)"); 
+                    rootProp.setProperty("--shadow1","rgba(0 0 0 / 45%)");
+                    rootProp.setProperty("--shadow2","rgba(255 255 255 / 15%)");
+                    rootProp.setProperty("--shadow3","rgba(255 255 255 / 15%)");
+                    rootProp.setProperty("--h3Color","white");
+                    rootProp.setProperty("--labelColor","white");
+                } 
+          });
+        </script>
+    </body>
+</html>
