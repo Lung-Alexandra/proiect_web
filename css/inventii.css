@@ -376,7 +376,7 @@ main, main:before, main:after {
 .card-container {
   margin: 25px auto 0;
   position: relative;
-  width: 63%;
+  width: 80%;
 }
 
 .card {
