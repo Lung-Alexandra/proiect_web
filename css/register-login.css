@@ -118,7 +118,11 @@ body{
     width: 100%;
     color: var(--h3Color);
 }
-
+@media (max-width: 400px){
+     .register-form h3{
+        font-size: 1.5em;
+    }
+}
 .form-group{
     margin-bottom: 25px;
 }
