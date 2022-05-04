@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/static/css/quiz.css">
+</head>
+<body>
+  <%-include('../partials/navbar');%>
+    <main>
+        <section class = "quiz">
+        <!--image card layout start-->
+    <div class="container">
+        <!--image row start-->
+        <div class="row">
+          <!--image card start-->
+          <div class="image">
+            <img src="/static/img/domains/fizica-domain.jpeg" alt="quiz fizica">
+            <div class="details">
+              <h2><span>Quiz 1</span></h2>
+              <div class="more">
+                <a href="quiz1.html" class="read-more">Take <span>Quiz</span></a>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img src="/static/img/domains/chimie-domain.jpg" alt="quiz chimie">
+            <div class="details">
+              <h2><span>Quiz 2</span></h2>
+              <div class="more">
+                <a href="quiz2.html" class="read-more">Take <span>Quiz</span></a>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img src="/static/img/domains/medicina-domain.jpg" alt="quiz medicina">
+            <div class="details">
+              <h2><span>Quiz 3</span></h2>
+              <div class="more">
+                <a href="quiz3.html" class="read-more">Take <span>Quiz</span></a>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+        </div>
+        <!--image row end-->
+        <!--image row start-->
+        <div class="row">
+          <!--image card start-->
+          <div class="image">
+            <img src="/static/img/domains/aviatie-domain.jpg" alt="quiz aviatie">
+            <div class="details">
+              <h2><span>Quiz 4</span></h2>
+              <div class="more">
+                <a href="quiz4.html" class="read-more">Take <span>Quiz</span></a>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+          <!--image card start-->
+          <div class="image">
+            <img src="/static/img/domains/navigatie-domain.jpg" alt="quiz navigație">
+            <div class="details">
+              <h2><span>Quiz 5</span></h2>
+              <div class="more">
+                <a href="quiz5.html" class="read-more">Take <span>Quiz</span></a>
+              </div>
+            </div>
+          </div>
+          <!--image card end-->
+        </div>
+        <!--image row end-->
+      </div>
+      <!--image card layout end-->
+      </section>
+    <section class = "info">
+      <div class = "opt">
+      <label for="domains-select">Choose a domain:</label>
+
+      <select name="domains-select" id="domains-select">
+          <option value="">--Please choose an option--</option>
+          <option value="fizica">Fizică</option>
+          <option value="chimie">Chimie</option>
+          <option value="medicina">Medicină</option>
+          <option value="aviatie">Aviație</option>
+          <option value="navigație">Navigație</option>
+      </select>
+      <button name="button" onClick = "alege()">Press me</button>
+      <button name="button" onClick = "sort()">Sort results</button>
+    </div>
+    </section>
+    </main>
+    <script src = "js/quiz.js"></script>
+</body>
+</html>
