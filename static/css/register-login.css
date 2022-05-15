@@ -36,6 +36,12 @@ body{
     border-color: #181e20;
     opacity: .9;
 }
+.mode{
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    cursor: pointer;
+}
 .login-page{
     width: 1000px;
     height: 480px;
@@ -128,9 +134,11 @@ body{
     margin-bottom: 25px;
 }
 .form-group p{
-    color: white;;
+    color: var(--labelColor);
 }
-
+.form-group input{
+    color: var(--labelColor);
+}
 .form-control{
     height: 45px;
     font-size: 1em;
@@ -156,12 +164,13 @@ body{
 label{
    font-size: 17px; 
    cursor: pointer;
+   color: var(--labelColor);
 }
 
 label span{
     font-size: 17px; 
     cursor: pointer;
-    color: white;
+    color: var(--labelColor);
 }
  
 .submit-btn{

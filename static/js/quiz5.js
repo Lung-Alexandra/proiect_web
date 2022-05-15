@@ -259,7 +259,7 @@ class Food {
   }
   draw() {
     const foodImg = new Image();
-    foodImg.src = "./img/newt.png";
+    foodImg.src = "/static/img/newt.png";
     let { x, y } = this.pos;
     foodImg.addEventListener('load', ()=>{
         CTX.globalCompositeOperation = "screen";
@@ -405,6 +405,7 @@ function reset() {
   KEY.resetState();
   isGameOver = false;
   clearTimeout(requestID);
+  time = new Date().getTime();
   loop();
 }
 time = new Date().getTime();

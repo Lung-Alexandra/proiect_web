@@ -342,11 +342,16 @@ nav .content .links{
 }
 
 /*main*/
+
 .content-inv {
   padding: 100px 0px;
   width: 100%;
   height: 100%;
   align-items: center;
+}
+.optiuni{
+  display: flex;
+  justify-content: center;
 }
 
 

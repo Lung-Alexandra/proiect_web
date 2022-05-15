@@ -5,14 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Register/Login Page</title>
-        <link rel = "stylesheet" href = "css/register-login.css">
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="https//cdn.jsdelivr.net/jquery.validation/1.16.0/jqery.validate.min.js"></script>
-        <script src="https//cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <link rel = "stylesheet" href = "/static/css/register-login.css">
+    
     </head>
     <body>
         <div id="returnbutton">
-            <a class="go-back" href="quiz.html">Back</a>
+            <a class="go-back" href="quiz">Back</a>
         </div>   
         <div class="login-page">
             <div class="box">
@@ -67,42 +65,11 @@
                 </div>
             </div>
         </div>     
-
-        <script>
-           
-            $(document).ready(function(){ 
-                var rootProp = document.documentElement.style;
-                $(".register-btn").click(function(){
-                    $(".register-form").removeClass('form-hidden');
-                    $(".login-form").addClass('form-hidden');
-                    $(".box").addClass('slide-form');
-                    $.darkMode();
-                });
-                $(".login-btn").click(function(){
-                    $(".register-form").addClass('form-hidden');
-                    $(".login-form").removeClass('form-hidden');
-                    $(".box").removeClass('slide-form');
-                    $.lightMode();
-                });
-                $.lightMode = function(){
-                    rootProp.setProperty("--backgroundColor","rgb(201, 197, 197)");
-                    rootProp.setProperty("--formBackgroundColor","rgb(224, 219, 219)"); 
-                    rootProp.setProperty("--shadow1","rgba(119,119,119,0.85)");
-                    rootProp.setProperty("--shadow2","rgba(255,255,255,0.85)");
-                    rootProp.setProperty("--shadow3","rgba(255,255,255)");
-                    rootProp.setProperty("--h3Color","#00354d");
-                    rootProp.setProperty("--labelColor","balck");
-                }
-                $.darkMode = function(){
-                    rootProp.setProperty("--backgroundColor","rgb(9 25 23)");
-                    rootProp.setProperty("--formBackgroundColor","rgba(9 25 23)"); 
-                    rootProp.setProperty("--shadow1","rgba(0 0 0 / 45%)");
-                    rootProp.setProperty("--shadow2","rgba(255 255 255 / 15%)");
-                    rootProp.setProperty("--shadow3","rgba(255 255 255 / 15%)");
-                    rootProp.setProperty("--h3Color","white");
-                    rootProp.setProperty("--labelColor","white");
-                } 
-          });
+        <div class="mode">
+            <button id = "mod" class="go-back" onclick = "Mode()">Dark Mode/Light Mode</button>
+        </div>
+        <script src = "/static/js/register-login.js">
+     
         </script>
     </body>
 </html>

@@ -9,11 +9,21 @@
 </head>
 <body>
     <%-include('../partials/navbar');%>
-   
+  
     <main>
-      
+        
         <section class="content-inv">
-            <div id="becul" class="card-container" data-Inventator="Thomas Edison" data-an="1879">
+            <div class = optiuni>
+                <p>Alege anul aparitiei: </p>
+                <select id="an-aparitie">
+                    <option value="">All</option>
+                    <option value="16">1600-1699</option>
+                    <option value="18">1800-1899</option>
+                    <option value="19">1900-1999</option>
+                    <option value="20">2000-prezent</option>
+                </select>
+            </div>
+            <div id="becul" class="card-container" data-Inventator="Thomas Edison" data-Inventator-r="Sir Humphry Davy"data-an="1879">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">01</span>
@@ -36,7 +46,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id="telescop" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id="telescop" class="card-container" data-Inventator="Galileo Galilei" data-Inventator-r="Hans Lippershey" data-an="1608">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">02</span>
@@ -59,7 +69,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id="sunete" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id="sunete" class="card-container" data-Inventator="Thomas Edison" data-Inventator-r="Edouard-Leon Scott de Martinville" data-an="1877">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">03</span>
@@ -87,7 +97,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id="radio" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id="radio" class="card-container" data-Inventator="Guglielmo Marconi" data-Inventator-r="Nikola Tesla" data-an="1895">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">04</span>
@@ -114,7 +124,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id="filmat" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id="filmat" class="card-container" data-Inventator="Thomas Edison" data-Inventator-r="Louis Le Prince" data-an="1890">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">05</span>
@@ -140,7 +150,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id="raze" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id="raze" class="card-container" data-Inventator="Thomas Edison" data-Inventator-r="Wilhelm Rontge" data-an="1895">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">06</span>
@@ -163,7 +173,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id = "automobil" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id = "automobil" class="card-container" data-Inventator="Henry Ford" data-Inventator-r=" Karl Benz" data-an="1885">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">07</span>
@@ -194,7 +204,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id="avion" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id="avion" class="card-container" data-Inventator="Fratii Wright" data-Inventator-r="Traian Vuia" data-an="1903">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">08</span>
@@ -227,7 +237,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id = "cibernetica" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id = "cibernetica" class="card-container" data-Inventator="Stefan Odobleja" data-Inventator-r="Stefan Odobleja" data-an="1937">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">09</span>
@@ -251,7 +261,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id="stilou" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id="stilou" class="card-container" data-Inventator="Petrache Poenaru" data-Inventator-r="Petrache Poenaru" data-an="1827">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">10</span>
@@ -274,7 +284,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id="vaccin" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id="vaccin" class="card-container" data-Inventator="Ioan Cantacuzino" data-Inventator-r="Ioan Cantacuzino" data-an="1913">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">11</span>
@@ -295,7 +305,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id = "rob" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id = "rob" class="card-container" data-Inventator="Simin Qiu" data-Inventator-r="Simin Qiu" data-an="2015">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">12</span>
@@ -313,7 +323,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id = "cada" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id = "cada" class="card-container" data-Inventator="Alexander Zhukovsky" data-Inventator-r="Alexander Zhukovsky" data-an="2021">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">13</span>
@@ -331,7 +341,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id = "tast" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id = "tast" class="card-container" data-Inventator="Yapi N'Cho Didier" data-Inventator-r="Yapi N'Cho Didier" data-an="2015">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">14</span>
@@ -347,7 +357,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id = "lampa" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id = "lampa" class="card-container" data-Inventator="Duncan Meerding" data-Inventator-r="Duncan Meerding" data-an="2021">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">15</span>
@@ -364,7 +374,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id = "drona" class="card-container" data-Inventator="Galileo Galilei" data-an="1608">
+            <div id = "drona" class="card-container" data-Inventator="Mihai Dragu" data-Inventator-r="Mihai Dragu" data-an="2019">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">16</span>
@@ -382,7 +392,7 @@
                 </div>
                 <div class="card-shadow"></div>
             </div>
-            <div id = "vreme" class="card-container" data-Inventator="Ken Kawamoto" data-an="2000">
+            <div id = "vreme" class="card-container" data-Inventator="Ken Kawamoto" data-Inventator-r="Ken Kawamoto" data-an="2015">
                 <div class="card u-clearfix">
                     <div class="card-body">
                             <span class="card-number card-circle subtle">17</span>
@@ -400,7 +410,6 @@
             </div>
         </section>  
     </main>
-    <script>
-    </script>
+    <script src="/static/js/inventii-filtre.js"></script>
 </body>
 </html>
