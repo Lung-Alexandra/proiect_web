@@ -17,7 +17,7 @@ anAparitie.addEventListener("change", function () {
         }
     });
 });
-
+/*
 for(let i=1;i<elements.length;++i)
 {
   let invent = {
@@ -31,7 +31,7 @@ for(let i=1;i<elements.length;++i)
  }
   console.log(JSON.stringify(invent));
 }
-
+*/
 //search bar
 /*const userCardTemplate = document.querySelector("[data-user-template]")
 const userCardContainer = document.querySelector("[data-user-cards-container]")
