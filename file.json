@@ -1,0 +1,11 @@
+[{
+    "Content": [{
+      "Name": "Google"
+    }],
+    "Imagine": "/static/img/inventii/becul.jpg"
+  }, {
+    "Content": [{
+      "Name": "Facebook"
+    }],
+    "Imagine": "/static/img/inventii/becul.jpg"
+  }]

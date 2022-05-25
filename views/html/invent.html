@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/invent.css">
+</head>
+<body>
+    <div id="returnbutton">
+        <a class="go-back" href="inventii">Back</a>
+    </div>  
+    <div id ="introduce">
+        <h1>Inventii in mod real</h1>
+        <input type = "text" id="nume inventie" placeholder="Nume inventie" autocomplete="on">
+        <input type = "text" id="nume inventator" placeholder="Nume inventator" autocomplete="on">
+        <input type = "text" id="invent" placeholder="Nume inventator" autocomplete="on">
+        <input type = "text" id="img" placeholder="link imagine" autocomplete="on">
+        <textarea  rows = "10" cols="30" type = "text" id ="descriere" placeholder="descriere" autocomplete="on"></textarea>
+        <div>
+            <button onclick = "add()">Add</button>
+        </div>
+        <input type = "number" id="idinvent" placeholder="Numarul inventiei care trebuie modificarte sau sterse">
+        <div>
+            <button onclick = "update()">Update</button>
+            <button onclick = "delet()">Delete</button>
+        </div>
+    </div>
+   <script src="/static/js/invent.js"></script>
+        
+</body>
+</html>

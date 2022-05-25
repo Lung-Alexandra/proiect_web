@@ -115,7 +115,7 @@ nav .content .links{
   position: absolute;
   height: 100%;
   max-width: calc(100% - 50px);
-  /*width: 100%;*/
+  width: 100%;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;

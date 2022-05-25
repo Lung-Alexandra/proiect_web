@@ -1,11 +1,12 @@
 const express = require('express');
+const req = require('express/lib/request');
 const hostname = '127.0.0.1';
 const port = 3000;
 const app = express();
 const path = require("path");
 
 app.set('view engine', 'ejs');
-
+app.use(express.json())
 app.use("/static",express.static("./static"));
 const StaticPath = path.join(__dirname,'views/html');
 //app.use(express.static(StaticPath));
@@ -75,13 +76,73 @@ app.get("/quiz4.html",(require,response)=>{
 app.get("/quiz5.html",(require,response)=>{
   response.sendFile(path.join(StaticPath,'quiz5.html'));
 });
+
+
+let inventii=[{
+  "nr":1,
+  "nume_inventie":"Becul",
+  "nume_inventator":"Inventator real: Sir Humphry Davy",
+  "invent":"Inventator „oficial”: Thomas Edison",
+  "img":"/static/img/inventii/becul.jpg",
+  "descriere" : ["In anul 1802,Sir Humphry Davy era in posesia celei mai puternice baterii electrice din acea perioada, obiect detinut cu mandrie la Institutul Regal al Marii Britanii. In acelasi an, a fost produsa prima forma de lumina incandescenta prin transmiterea unui flux de curent electric prin intermediul unui fir subtire de platina, metal ales datorita rezistentei sale deosebite la topire.","Noua forma de iluminare nu era indeajuns de puternica sau rezistenta pentru a fi folosita in aplicatii practice, dar a fost primul obiect care emitea lumina prin intermediul curentului electric. De abia in anul 1879, Thomas Edison a creat becul comercial."]
+  }]
+app.get("/invent.html",(require,response)=>{
+  response.sendFile(path.join(StaticPath,'invent.html'));
+});
+app.post("/invent.html/add",(require,response)=>{
+  let newInvent = {
+    "nr":inventii.length+1,
+    "nume_inventie":require.body.nume_inventie,
+    "nume_inventator":require.body.nume_inventator,
+    "invent":require.body.invent,
+    "img":require.body.img,
+    "descriere":require.body.descriere,
+  };
+  inventii.push(newInvent);
+  response.send(inventii);
+});
+app.get("/invent.html/view",(require,response)=>{
+  response.send(JSON.stringify(inventii));
+});
+app.delete("/invent.html/delete_invent/:id", (req,res)=>{
+  let f = parseInt(req.params.id)-1;
+  
+  if(f>=0 && f<inventii.length){
+    inventii.splice(f,1);
+    for(let i=0;i<inventii.length;++i)
+    inventii[i].nr = i+1;
+    res.send(inventii);
+
+  }else{
+    res.send({msg:`ID invalid.`})
+  }
+
+})
+app.put("/invent.html/update_invent/:id", (req,res)=>{
+  let f = parseInt(req.params.id)-1;
+
+  if(f>=0 && f<inventii.length){
+    if(req.body.nume_inventie != "")
+    inventii[f].nume = req.body.nume_inventie;
+    if(req.body.nume_inventator != "")
+    inventii[f].invent = req.body.nume_inventator;
+    if(req.body.invent != "")
+    inventii[f].nume_inventator = req.body.invent;
+    if(req.body.img != "")
+    inventii[f].img = req.body.img;
+    if(req.body.descriere != "")
+    inventii[f].descriere = req.body.descriere;
+
+    res.send(inventii);
+
+  }else{
+    res.send({msg:"Invalid ID"})
+  }
+
+})
 app.get("*",(require,response)=>{
   response.sendFile(path.join(StaticPath,'404error.html'))
 })
-//app.use(function(req, res,next){
- //res.status(404).sendFile( path.join(StaticPath,'404error.html'));
-//});
-
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
