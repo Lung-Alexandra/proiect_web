@@ -18,6 +18,20 @@ anAparitie.addEventListener("change", function () {
     });
 });
 
+for(let i=1;i<elements.length;++i)
+{
+  let invent = {
+  "nr":elements[i].getElementsByTagName("span")[0].innerText,
+ "id":elements[i].id,
+  "nume_inventie":elements[i].getElementsByTagName("h2")[0].innerText,
+   "nume_inventator":elements[i].getElementsByTagName("p")[0].innerText,
+ "invent": elements[i].getElementsByTagName("p").length == 2  ? elements[i].getElementsByTagName("p")[1].innerText : elements[i].getElementsByTagName("p")[0].innerText,
+ "img":elements[i].getElementsByTagName("img")[0].src.slice(21,elements[i].getElementsByTagName("img")[0].src.length+1),
+  "descriere":elements[i].getElementsByTagName("span")[1].innerText
+ }
+  console.log(JSON.stringify(invent));
+}
+
 //search bar
 /*const userCardTemplate = document.querySelector("[data-user-template]")
 const userCardContainer = document.querySelector("[data-user-cards-container]")
