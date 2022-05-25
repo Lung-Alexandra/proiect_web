@@ -79,12 +79,12 @@ function viewadd(){
         
             let p1 = document.createElement("p");
             p1.className = "card-p";
-            p1.innerText = inventii[i].nume_inventator;
+            p1.innerText = inventii[i].invent;
             div3.appendChild(p1);
         
             let p2 = document.createElement("p");
             p2.className = "card-p";
-            p2.innerText = inventii[i].invent;
+            p2.innerText = inventii[i].nume_inventator;
             div3.appendChild(p2);
         
             let span2 =  document.createElement("span");
@@ -136,13 +136,13 @@ function update(){
         break;
     }
     if(invent.nume_inventie != ""){
-    InventiiJson[poz].nume = invent.nume_inventie;
+    InventiiJson[poz].nume_inventie = invent.nume_inventie;
     InventiiJson[poz].id = invent.nume_inventie;
     }
     if(invent.nume_inventator != "")
-    InventiiJson[poz].invent = invent.nume_inventator;
+    InventiiJson[poz].nume_inventator = invent.nume_inventator;
     if(invent.invent != "")
-    InventiiJson[poz].nume_inventator = invent.invent;
+    InventiiJson[poz].invent = invent.invent;
     if(invent.img != "")
     InventiiJson[poz].img = invent.img;
     if(invent.descriere != "")
