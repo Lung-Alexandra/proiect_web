@@ -201,16 +201,5 @@
         "descriere": [
             "Ken Kawamoto este un inginer care vrea să aducă tehnologia mai aproape de vieţile oamenilor, aşa că a inventat un dispozitiv care îţi arată care va fi starea de mâine a vremii. Acest aparat se numeşte Temperaturoscop şi este capabil să genereze fenomene meteorologice precum ploaia sau fulgerele. Inventatorul său spune că momentan lucrează la posibilitatea ca dispozitivul să simuleze şi zăpada artificială."
         ]
-    },
-    {
-        "nr": 18,
-        "id": "aa",
-        "nume_inventie": "aa",
-        "nume_inventator": "aaa",
-        "invent": "dddd",
-        "img": "https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg",
-        "descriere": [
-            "test descriere test\n"
-        ]
     }
 ]
