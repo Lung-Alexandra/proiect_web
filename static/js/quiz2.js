@@ -1,6 +1,6 @@
-let arr1 = ["a","b", "c"]
-let arr2 = ["a","b","c"]
-let arr = ["aa","bc","cb"]
+let arr1 = ["becul","telescopul", "razex"]
+let arr2 = ["1802","1895","1608"]
+let arr = ["becul1802","telescopul1608","razex1895"]
 let container1 = document.getElementsByTagName("cont1")[0];
 for(let i=0;i<arr1.length;i++){
     let div1=document.createElement("div");

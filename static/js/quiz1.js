@@ -1,5 +1,5 @@
-let denumiri =["a","b","c","d","e","f","g","h","i","j"];
-let answer = [1,5,3,9,6,7,2,8,4,0];
+let denumiri =["Nikolaus Otto","Sir Humphry","Albert Einstein","Alfred Nobel","Frații Wright","D.G. Fahrenheit","Traian Vuia","W. Thompson ","Issac Newton"];
+let answer = [8,5,1,7,0,3,4,6,2];
 const container=document.getElementsByTagName("container")[0];
 for(let i=0;i<denumiri.length;i++){
     let div1=document.createElement("div");
