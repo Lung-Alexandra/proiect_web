@@ -142,6 +142,6 @@ app.put("/invent.html/update_invent/:id", (req,res)=>{
 app.get("*",(require,response)=>{
   response.sendFile(path.join(StaticPath,'404error.html'))
 })
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(port, () => {
+  console.log(`Server running at: ${port}`);
 });
