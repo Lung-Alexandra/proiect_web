@@ -16,9 +16,9 @@ for(let i=0;i<denumiri.length;i++){
 
 let di=container.getElementsByTagName("div");
 onkeydown=function(event){
-    var a = event.key;
+    let a = Number(event.key);
    
-     if(a == answer[0]){
+     if(a === answer[0]){
         container.removeChild(di[answer[0]]);
         denumiri.splice(answer[0],1);
         answer.shift();   
