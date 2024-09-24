@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   max-width: calc(100% - 200px);
   margin: 0 auto;
-  height: 70px;
+  height: 4rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -61,22 +61,30 @@ nav .content{
 nav .content .links{
   margin-left: 80px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .logo{
+  padding: 0;
+  margin: 0;
+  width: fit-content;
 }
 .content .logo a{
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 600;
 }
+
 .content .links li{
   list-style: none;
-  line-height: 70px;
 }
 .content .links li a,
 .content .links li label{
   color: #fff;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 9px 17px;
+  padding: 1rem 17px;
   border-radius: 10%;
   transition: all 0.3s ease;
 }
@@ -87,10 +95,13 @@ nav .content .links{
 .content .links li label:hover{
   background: #323c4e;
 }
+/*.content .links li:hover {*/
+/*  background: #323c4e;*/
+/*}*/
 .wrapper .search-icon,
 .wrapper .menu-icon{
   color: #fff;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
   line-height: 70px;
   width: 70px;
@@ -108,7 +119,7 @@ nav .content .links{
   left: 43px;
   bottom: 43px;
   background: #FDFAF5;
-  box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .wrapper .search-box{
@@ -129,7 +140,7 @@ nav .content .links{
   height: 100%;
   border: none;
   outline: none;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   color: #fff;
   background: #171c24;
   padding: 0 100px 0 15px;
@@ -148,7 +159,7 @@ nav .content .links{
   border: none;
   outline: none;
   color: #fff;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   cursor: pointer;
 }
 .wrapper input[type="checkbox"]{
@@ -162,8 +173,8 @@ nav .content .links{
 .content .links ul{
   position: absolute;
   background: #171c24;
-  top: 80px;
-  z-index: -1;
+  top: 5rem;
+  /*z-index: -1;*/
   opacity: 0;
   visibility: hidden;
 }
@@ -230,14 +241,14 @@ nav .content .links{
     overflow-y: auto;
     padding-bottom: 100px;
     transition: all 0.3s ease;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
   nav .content .links:hover{
     overflow-y:scroll;
     scrollbar-width: thin;
     scrollbar-color: #90A4AE #CFD8DC;
   }
-  
+
   nav .content .links::-webkit-scrollbar {
     width: 10px;
   }
@@ -258,7 +269,7 @@ nav .content .links{
   .content .links li a,
   .content .links li label{
     line-height: 40px;
-    font-size: 1em;
+    font-size: 1rem;
     display: block;
     padding: 8px 18px;
     cursor: pointer;
@@ -277,14 +288,14 @@ nav .content .links{
     max-height: 0px;
     overflow: hidden;
   }
-  
+
   .content .links ul:hover{
     overflow-y:scroll;
     scrollbar-width: thin;
     scrollbar-color: #90A4AE #CFD8DC;
   }
-  
-  
+
+
   .content .links ul::-webkit-scrollbar {
     width: 10px;
   }
@@ -301,22 +312,22 @@ nav .content .links{
   .content .links #show-inventatori:checked ~ ul,
   .content .links #show-generalitati:checked ~ ul,
   .content .links #show-inventii:checked ~ ul,
-  .content .links #show-items-fizica:checked ~ ul,
-  .content .links #show-items-chimie:checked ~ ul,
-  .content .links #show-items-aviatie:checked ~ ul,
-  .content .links #show-items-navigatie:checked ~ ul,
-  .content .links #show-items-medicina:checked ~ ul,
-  .content .links #show-items-16:checked ~ ul,
-  .content .links #show-items-18:checked ~ ul,
-  .content .links #show-items-19:checked ~ ul,
-  .content .links #show-items-20:checked ~ ul{
+  .content .links #show-itrems-fizica:checked ~ ul,
+  .content .links #show-itrems-chimie:checked ~ ul,
+  .content .links #show-itrems-aviatie:checked ~ ul,
+  .content .links #show-itrems-navigatie:checked ~ ul,
+  .content .links #show-itrems-medicina:checked ~ ul,
+  .content .links #show-itrems-16:checked ~ ul,
+  .content .links #show-itrems-18:checked ~ ul,
+  .content .links #show-itrems-19:checked ~ ul,
+  .content .links #show-itrems-20:checked ~ ul{
     max-height: 100vh;
   }
   .content .links ul li{
     margin: 7px 20px;
   }
   .content .links ul li a{
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 30px;
     border-radius: 5px!important;
   }
@@ -327,7 +338,7 @@ nav .content .links{
     padding: 0 10px;
   }
   .content .logo a{
-    font-size: 1em;
+    font-size: 1rem;
   }
   .wrapper .search-box{
     max-width: calc(100% - 70px);
@@ -359,7 +370,7 @@ nav .content .links{
 .box{
   text-align: center;
   min-height: 550px;
-  width: calc(100%/3 - 90px) ;
+  width: 30% ;
   color: white;
   overflow: hidden;
   cursor: pointer;
@@ -403,7 +414,7 @@ nav .content .links{
   .boxes{
     max-width:100%;
     width: 100%;
-    align-items: center;
+    align-itrems: center;
     justify-content: center;
     height: 100%;
     padding: 70px 0px;
@@ -425,7 +436,7 @@ nav .content .links{
   text-align: center;
 }
 a > .version{
-  font-size: 0.98em;
+  font-size: 0.98rem;
   padding-top: 40px;
   display: block;
   color: white;
@@ -434,13 +445,13 @@ a > .title{
   position: relative;
   padding-bottom: 20px;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5rem;
   color: white;
 }
 
 @media(max-width: 400px){
   a > .version{
-    font-size: 0.98em;
+    font-size: 0.98rem;
     padding-top: 40px;
     display: block;
     color: white;
@@ -449,7 +460,7 @@ a > .title{
     position: relative;
     padding-bottom: 20px;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     color: white;
   }
   

@@ -122,13 +122,13 @@ app.put("/invent.html/update_invent/:id", (req,res)=>{
     inventii[f].nume_inventie = req.body.nume_inventie;
     inventii[f].id =  inventii[f].nume;
     }
-    if(req.body.nume_inventator != "")
+    if(req.body.nume_inventator !== "")
     inventii[f].nume_inventator = req.body.nume_inventator;
-    if(req.body.invent != "")
+    if(req.body.invent !== "")
     inventii[f].invent = req.body.invent;
-    if(req.body.img != "")
+    if(req.body.img !== "")
     inventii[f].img = req.body.img;
-    if(req.body.descriere != "")
+    if(req.body.descriere !== "")
     inventii[f].descriere = req.body.descriere;
 
     res.send(inventii);

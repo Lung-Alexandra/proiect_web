@@ -230,7 +230,7 @@ nav .content .links{
     overflow-y: auto;
     padding-bottom: 100px;
     transition: all 0.3s ease;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
   nav .content .links:hover{
     overflow-y:scroll;
@@ -250,7 +250,7 @@ nav .content .links{
     border: 3px solid #CFD8DC;
   }
   nav #show-menu:checked ~ .content .links{
-    left: 0%;
+    left: 0;
   }
   .content .links li{
     margin: 15px 20px;
@@ -274,7 +274,7 @@ nav .content .links{
     opacity: 1;
     visibility: visible;
     background: none;
-    max-height: 0px;
+    max-height: 0;
     overflow: hidden;
   }
   
